@@ -1,0 +1,154 @@
+@import "../css/common.css";
+
+/* header */
+header.device {
+    background-image: url("../images/room_headerBg.jpg");
+}
+
+
+.device h6 {
+    color: #293d6e;
+    text-align: center;
+}
+
+/* main */
+main.device {
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
+}
+
+main.device .center {
+    text-align: center;
+}
+
+main.device .center h3+p {
+    margin: 3% auto;
+}
+
+.device_choice {
+    width: 100%;
+}
+
+.device_choice ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.device_choice li {
+    width: 28%;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    .device_choice li {
+        width: 48%;
+        margin-bottom: 10%;
+    }
+}
+
+.device_choice .pic {
+    position: relative;
+}
+@media screen and (max-width:767px){
+    .device_choice .pic {
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+.device_choice .pic img {
+    width: 100%;
+}
+@media screen and (max-width:767px){
+    .device_choice .pic img {
+        order: 2;
+    } 
+}
+
+.device_choice .text {
+    width: 100%;
+    padding: 5%;
+    background-color: #dae6ea;
+}
+@media screen and (max-width:767px){
+    .device_choice .text p{
+        text-align: left;
+        font-size: 0.85rem;
+    }
+}
+
+.device_choice .pic .btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    padding: 35% 0;
+    background-color: rgba(43, 61, 93, 0.8);
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+@media screen and (max-width:767px){
+    .device_choice .pic .btn {
+        order: 1;
+        position: static;
+        height: auto;
+        padding: 2% 0;
+        background-color: rgba(43, 61, 93, 0);
+        opacity: 1;
+        transition: none;
+    }
+}
+
+.device_choice .pic .btn p {
+    display: inline-block;
+    color: white;
+    border-bottom: 1px dashed white;
+}
+@media screen and (max-width:767px){
+    .device_choice .pic .btn p {
+        color: #3577bc;
+        border-bottom: 1px dashed #3577bc;
+    }
+}
+
+.device_choice .pic .btn p:hover {
+    color: #98e4ff;
+    border-bottom: 1px solid #98e4ff;
+}
+
+.device_choice .pic .btn:hover {
+    opacity: 1;
+}
+
+.choosed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 45% 0;
+    color: white;
+    background-color: rgba(43, 61, 93, 0.95);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: none;
+    cursor: pointer;
+    animation: picOpa .5s 1 linear forwards;
+}
+
+@media screen and (max-width:767px) {
+    .btns{
+        padding-top: 5%;
+        font-size: 0;
+    }
+    .btns input[type="button"] {
+        display: inline-block;
+        width: 30%;
+        margin: 0 1.5%;
+    }
+}

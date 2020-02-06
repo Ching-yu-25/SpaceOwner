@@ -1,0 +1,264 @@
+@import "../css/common.css";
+
+/* header */
+header.lobby{
+    background-image: url("../images/lobby_headerBg.jpg");
+    line-height: 45px;
+    padding: 4%;
+    background-size: 135%;
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    header.lobby {
+        background-size: 145%;
+    }
+}
+@media screen and (max-width:767px) {
+    header.lobby {
+        background-size: 170%;
+    }
+}
+
+/* main */
+
+/* 大廳概況 */
+main.lobby .center{
+    text-align: center;
+}
+
+
+
+/* 區域選擇 */
+
+main.lobby h3+ p{
+    margin-top: 2%;
+}
+@media screen and (max-width:767px){
+    main.lobby h3+ p{
+        text-align: left;
+    }
+}
+
+.lobby_choice{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 5% auto 5%;
+    padding: 0 8%;
+    position: relative;
+}
+@media screen and (max-width:767px){
+    .lobby_choice{
+        padding: 5% 8%;
+        margin: 5% auto 0;
+    } 
+}
+
+.lobby_choice::before{
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 50%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../images/milky-way.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 20px #ffffff inset;
+}
+.lobby_choice::after{
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("../images/milky-way.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 20px #ffffff inset;
+}
+@media screen and (max-width:767px){
+    .lobby_choice::before{
+        width:100%;
+        top:10%;
+        height: 80%;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+    .lobby_choice::after{
+        display: none;
+    }
+}
+
+main.lobby h4{
+    color: #293d6e;
+}
+
+
+.chair{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+@media screen and (max-width:767px){
+    .chair{
+        display: flex;
+        float: none;
+        flex-direction: column;
+        margin:5% auto;
+    }
+}
+
+.chair .pic{
+    width: 55%;
+    float: left;
+    overflow: hidden;
+}
+@media screen and (max-width:767px){
+    .chair .pic{
+        width: 100%;
+        float: right;
+        overflow: hidden;
+        order: 1;
+    }
+}
+
+.chair .text{
+    width: 55%;
+    padding: 30px;
+    background-color: #f8e18d;
+    float: right;
+    margin-left: -10%; 
+}
+@media screen and (max-width:767px){
+    .chair .text{
+        width: 100%;
+        position: relative;
+        margin-top: -5%;
+        margin-left: 0; 
+        order: 2;
+    }
+}
+
+.sofa{
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: flex-end;
+    margin-top: -15%;
+}
+@media screen and (max-width:767px){
+    .sofa{
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction:column;
+        margin:5% auto;
+    }
+}
+
+.sofa .pic{
+    width: 55%;
+    float: right;
+    overflow: hidden;
+    margin-left: -10%;
+    margin-bottom: -0.5%;
+}
+@media screen and (max-width:767px){
+    .sofa .pic{
+        width: 100%;
+        float: left;
+        margin-bottom: -5%;
+        margin-left:0;
+        order: 1;
+    }
+}
+
+.sofa .text{
+    width: 55%;
+    padding: 30px;
+    background-color: #f8e18d;
+    float: left;
+}
+@media screen and (max-width:767px){
+    .sofa .text{
+        width: 100%;
+        margin-right:0;
+        order: 2;
+    }
+}
+
+.chair .pic img,.sofa .pic img{
+    width: 100%;
+}
+
+.star{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: #ffffff;
+    transform: rotate(50deg);
+    animation: shooting 1s 5s 1 linear;
+}
+.star2{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: 45%;
+    left: 45%;
+    background-color: #ffffff;
+    transform: rotate(50deg);
+    animation: shooting2 1s 10s 1 linear;
+}
+@media screen and(max-width:767px){
+    .star,.star2{
+        display:none;
+        background-color: transparent;
+    }
+}
+@keyframes shooting {
+    0% {
+        height: 0px;
+        background-color:rgba(255, 255, 255, 0) ;
+    }
+
+    50% {
+        width: 1px;
+        height: 50px;
+        background-color:rgba(255, 255, 255, 0.7) ;
+    }
+
+    100% {
+        background-color: #293d6e;
+        height: 0px;
+        width: 0;
+        top: 45%;
+        right: 45%;
+    }
+}
+@keyframes shooting2 {
+    0% {
+        height: 0px;
+        background-color: #293d6e;
+    }
+
+    50% {
+        width: 1px;
+        height: 50px;
+        background-color:rgba(255, 255, 255, 0.7) ;
+    }
+
+    100% {
+        background-color:rgba(255, 255, 255, 0);
+        height: 0px;
+        width: 0;
+        bottom: 0%;
+        left: 0%;
+    }
+}

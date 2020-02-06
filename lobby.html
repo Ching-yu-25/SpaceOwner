@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Owner | 大廳</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/lobby.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+
+    <header class="lobby">
+        <div class="center">
+            <h6>空間介紹</h6>
+            <h2>大廳</h2>
+        </div>
+
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <div class="center">
+            <div class="nav_logo">
+                <a href="index.html" alt="spaceOwner │ Home"><img src="./images/nav_logo.svg" alt=""></a>
+            </div>
+            <button class="hamburger hamburger--spin" type="button" id="ham_btn">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="nav_list" id="menu">
+                <li>
+                    <div class="nowpage">空間介紹<span>Introduction</span></div>
+                    <div class="li_in">
+                        <ul class="sublist">
+                            <li><a href="room.html">包廂</a></li>
+                            <li class="nowpage">大廳</li>
+                            <li><a href="rule.html">租借規則</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>/</li>
+                <li><a href="sale.html">優惠方案<span>Sale</span></a></li>
+                <li>/</li>
+                <li><a href="search.html">租借查詢<span>Search</span></a></li>
+                <li>/</li>
+                <li><a href="information.html">各店資訊<span>Information</span></a></li>
+                <li>/</li>
+                <li><a href="#">登入註冊<span>Sign in</span></a></li>
+            </ul>
+            <div class=" clearfix"></div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="lobby">
+        <!--  -->
+        <section class="lobby_intro">
+            <div class="center">
+                <h3>大廳簡介</h3>
+                <div class="linedraw_text">
+                    <div class="linedraw wow fadeIn">
+                        <img src="./images/lobby-intro.svg" alt="">
+                    </div>
+                    <div class="text">
+                            <p>大廳最大可容納人數：20 – 40人。</p>
+                            <p>大廳於各店 1 樓，為開放式空間，區分為一般座位及沙發區。各區容納人數不同，詳情請參閱各店資訊。</p>
+                            <p>各座位僅能 1 人使用，請勿佔領其他旅人的座位。</p>
+                            <p>座位於預約時隨機分配，若預約人數超過 1 人，同行者會共桌。有其他需求者，請於預約其他欄位中填寫，勿於現場上演座位爭奪戰。</p>
+                            <p>無租借設備服務，茶點可預約，亦可現場加購。若因活動需求包區，可租借活動設備。</p>
+                            <p>包區可辦理小型活動。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="lobby_type">
+            <div class="center">
+                <h3>區域選擇</h3>
+                <p>一個座位也可以是屬於一個人的空間。<br>
+                    1F大廳分為一般座位區及沙發區，開放空間下可獨享亦可分享。</p>
+                <div class="lobby_choice">
+                    <div class="star"></div>
+                    <div class="star2"></div>
+                    <div class="chair">
+                        <div class="text wow bounceInDown" data-wow-delay=".5s">
+                            <h4>一般座位</h4>
+                            <p>推薦人數：1人<br>價錢計算：50元/時</p>
+                            <div class="btn"><a href="reservation.html">預約</a></div>
+                        </div>
+                        <div class="pic wow bounceInDown"><img src="./images/lobby_chair.png" alt=""></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="sofa">
+                        <div class="text wow bounceInUp" data-wow-delay=".5s">
+                            <h4>沙發區</h4>
+                            <p>推薦人數：1人<br>價錢計算：80元/時</p>
+                            <div class="btn"><a href="reservation.html">預約</a></div>
+                        </div>
+                        <div class="pic wow bounceInUp"><img src="./images/lobby_sofa.png" alt=""></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+                <p class="small">各分店一般座位與沙發區樣式皆不同，以現場為主。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="center">
+            <div class="copyright">
+                Copyright &copy; 2019 SpaceOwner. All rights reserved
+            </div>
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fb_icon.png" alt=""></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="./images/twitter_icon.png" alt=""></a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

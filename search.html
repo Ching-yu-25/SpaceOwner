@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Owner | 時間查詢</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+
+    <header class="search">
+        <div class="center">
+            <h2>租借查詢</h2>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <div class="center">
+            <div class="nav_logo">
+                <a href="index.html" alt="spaceOwner │ Home"><img src="./images/nav_logo.svg" alt=""></a>
+            </div>
+            <button class="hamburger hamburger--spin" type="button" id="ham_btn">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="nav_list" id="menu">
+                <li>
+                    <div>空間介紹<span>Introduction</span></div>
+                    <div class="li_in">
+                        <ul class="sublist">
+                            <li><a href="room.html">包廂</a></li>
+                            <li><a href="lobby.html">大廳</a></li>
+                            <li><a href="rule.html">租借規則</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>/</li>
+                <li><a href="sale.html">優惠方案<span>Sale</span></a></li>
+                <li>/</li>
+                <li class="nowpage">租借查詢<span>Search</span></li>
+                <li>/</li>
+                <li><a href="information.html">各店資訊<span>Information</span></a></li>
+                <li>/</li>
+                <li><a href="#">登入註冊<span>Sign in</span></a></li>
+            </ul>
+            <div class=" clearfix"></div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="search">
+        <div class="center">
+            <h3>租借狀況查詢</h3>
+            <p>颱風警報！ 9/1-2 台南、高雄分店不開放，預約訂單調整，請登入修改訂單。</p>
+            <form action="">
+                <div class="search_name">
+                    <label for="shop_search">分店</label>
+                    <select name="" id="shop_search">
+                        <option value="">台北店</option>
+                        <option value="">新北店</option>
+                        <option value="">桃園店</option>
+                        <option value="">台中店</option>
+                        <option value="">台南店</option>
+                        <option value="">高雄店</option>
+                    </select>
+                </div>
+                <div class="search_date">
+                    <label for="">日期</label>
+                    <input type="date" value="2019-11-05">
+                </div>
+                <div class="search_type">
+                    <input type="radio" name="search_type" id="search_radR" checked>
+                    <label for="search_radR" class="room_label">包廂</label>
+                    <input type="radio" name="search_type" id="search_radL">
+                    <label for="search_radL" class="lobby_label">大廳</label>
+                    <input type="button" class="btn" value="查詢">
+                </div>
+
+
+
+            </form>
+            <div class="time" id="room_search">
+                <div class="hours">
+                    <div class="num">9</div>
+                    <div class="num">10</div>
+                    <div class="num">11</div>
+                    <div class="num">12</div>
+                    <div class="num">13</div>
+                    <div class="num">14</div>
+                    <div class="num">15</div>
+                    <div class="num">16</div>
+                    <div class="num">17</div>
+                    <div class="num">18</div>
+                    <div class="num">19</div>
+                    <div class="num">20</div>
+                    <div class="num">21</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="room_type room1">
+                    <div class="name">獨者星球</div>
+                    <div class="resr_hours">
+                        <div class="cust">邊緣人<span class="resr_hrs">9:00-12:00</span></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="room_type room2">
+                    <div class="name">湛藍之星</div>
+                    <div class="resr_hours">
+                        <div class="cust">PUKA<span class="resr_hrs">15:00-19:00</span></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="room_type room3">
+                    <div class="name">落秋葉</div>
+                    <div class="resr_hours">
+                        <div class="cust">&nbsp;</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="room_type room4">
+                    <div class="name">黑白棋</div>
+                    <div class="resr_hours">
+                        <div class="cust">宇宙人<span class="resr_hrs">13:00-16:00</span></div>
+                        <div class="cust2">熊君<span class="resr_hrs">17:00-20:00</span></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="room_type room5">
+                    <div class="name">秘密基地</div>
+                    <div class="resr_hours">
+                        <div class="cust">魔法使<span class="resr_hrs">9:00-13:00</span></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="room_type room6">
+                    <div class="name">南洋風情</div>
+                    <div class="resr_hours">
+                        <div class="cust">&nbsp;</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="room_type room7">
+                    <div class="name">綠木榻榻</div>
+                    <div class="resr_hours">
+                        <div class="cust">綠星人<span class="resr_hrs">16:00-18:00</span></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="time" id="lobby_search">
+                <div class="hours">
+                    <div class="num">9</div>
+                    <div class="num">10</div>
+                    <div class="num">11</div>
+                    <div class="num">12</div>
+                    <div class="num">13</div>
+                    <div class="num">14</div>
+                    <div class="num">15</div>
+                    <div class="num">16</div>
+                    <div class="num">17</div>
+                    <div class="num">18</div>
+                    <div class="num">19</div>
+                    <div class="num">20</div>
+                    <div class="num">21</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="lobby_type lobby_c">
+                    <div class="name">一般座位</div>
+                    <div class="resr_hours">
+                        <div class="cust">艾莉絲<span class="resr_hrs">18:00-21:00</span></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="lobby_type lobby_s">
+                    <div class="name">沙發區</div>
+                    <div class="resr_hours">
+                        <div class="cust">BOSS<span class="resr_hrs">12:00-16:00</span></div>
+                        <div class="cust2">梅斯<span class="resr_hrs">15:00-19:00</span></div>
+                        <div class="cust3">坎羅<span class="resr_hrs">09:00-13:00</span></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="btn"><a href="reservation.html">立即預約</a></div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="center">
+            <div class="copyright">
+                Copyright &copy; 2019 SpaceOwner. All rights reserved
+            </div>
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fb_icon.png" alt=""></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="./images/twitter_icon.png" alt=""></a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+
+    <script type="text/javascript">
+        //search-radio切換
+        function searchTypeR() {
+            $("room_search").style.display = "block";
+            $("lobby_search").style.display = "none";
+        }
+
+        function searchTypeL() {
+            $("room_search").style.display = "none";
+            $("lobby_search").style.display = "block";
+        }
+        $("search_radR").onclick = searchTypeR;
+        $("search_radL").onclick = searchTypeL;
+    </script>
+
+</body>
+
+</html>

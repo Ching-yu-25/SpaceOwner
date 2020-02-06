@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Owner | 租借規則</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reservation.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+
+    <header class="reservation">
+        <div class="center">
+            <h2>預約</h2>
+        </div>
+
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <div class="center">
+            <div class="nav_logo">
+                <a href="index.html" alt="spaceOwner │ Home"><img src="./images/nav_logo.svg"
+                        alt=""></a>
+            </div>
+            <button class="hamburger hamburger--spin" type="button" id="ham_btn">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            <ul class="nav_list" id="menu">
+                <li>
+                    <div>空間介紹<span>Introduction</span></div>
+                    <div class="li_in">
+                        <ul class="sublist">
+                            <li><a href="room.html">包廂</a></li>
+                            <li><a href="lobby.html">大廳</a></li>
+                            <li><a href="rule.html"></a>租借規則</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>/</li>
+                <li><a href="sale.html">優惠方案<span>Sale</span></a></li>
+                <li>/</li>
+                <li><a href="search.html">租借查詢<span>Search</span></a></li>
+                <li>/</li>
+                <li><a href="information.html">各店資訊<span>Information</span></a></li>
+                <li>/</li>
+                <li><a href="#">登入註冊<span>Sign in</span></a></li>
+            </ul>
+            <div class=" clearfix"></div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="reservation">
+        <div class="center">
+            <h3>預約表單</h3>
+            <form action="" id="resrForm">
+                <div class="top">
+                    <div class="name">
+                        <label for="">姓名</label>
+                        <input type="text" name="name" id="cusName" placeholder="請填寫真實姓名" required>
+                    </div>
+                    <div class="email">
+                        <label for="">E-mail</label>
+                        <input type="email" name="mail" placeholder="ex:abc123@gmail.com" required>
+                    </div>
+                    <div class="pho_num">
+                        <label for="">手機</label>
+                        <input type="text" name="pho_num" placeholder="ex:0988003396" required>
+                    </div>
+                    <div class="person">
+                        <label for="">人數</label>
+                        <input type="number" name="person" placeholder="0" required>
+                    </div>
+                    <div class="res_place">
+                        <label for="">預約分店</label>
+                        <select name="" id="" required>
+                            <option value="" >台北店</option>
+                            <option value="">新北店</option>
+                            <option value="">桃園店</option>
+                            <option value="">台中店</option>
+                            <option value="">台南店</option>
+                            <option value="">高雄店</option>
+                        </select>
+                    </div>
+                    <div class="res_date" required>
+                        <label for="">預約日期</label>
+                        <input type="date" value="2019-11-05">
+                    </div>
+                    <div class="res_time" required>
+                        <label for="">預約時間</label>
+                        <select name="" id="">
+                            <option value="">09:00</option>
+                            <option value="">10:00</option>
+                            <option value="">11:00</option>
+                            <option value="">12:00</option>
+                            <option value="">13:00</option>
+                            <option value="">14:00</option>
+                            <option value="">15:00</option>
+                            <option value="">16:00</option>
+                            <option value="">17:00</option>
+                            <option value="">18:00</option>
+                            <option value="">19:00</option>
+                            <option value="">20:00</option>
+                            <option value="">21:00</option>
+                        </select>
+                        <span>-</span>
+                        <select name="" id="" required>
+                            <option value="">09:00</option>
+                            <option value="">10:00</option>
+                            <option value="">11:00</option>
+                            <option value="">12:00</option>
+                            <option value="">13:00</option>
+                            <option value="">14:00</option>
+                            <option value="">15:00</option>
+                            <option value="">16:00</option>
+                            <option value="">17:00</option>
+                            <option value="">18:00</option>
+                            <option value="">19:00</option>
+                            <option value="">20:00</option>
+                            <option value="">21:00</option>
+                        </select>
+                    </div>
+                    <div class="plan_choice">
+                        <label for="">租借計畫</label>
+                        <select name="" id="plan_choice" required>
+                            <option value="">無</option>
+                            <option value="">迷你影廳計畫</option>
+                            <option value="">電動間計畫</option>
+                            <option value="">交流茶會計畫</option>
+                        </select>
+                    </div>
+                    <div class="resr_type">
+                        <input type="radio" name="resr_type" id="room_rad"  checked required>
+                        <label for="room_rad" class="resr_room">包廂</label>
+                        <input type="radio" name="resr_type" id="lobby_rad" required>
+                        <label for="lobby_rad" class="resr_lobby">大廳</label>
+                        <select name="" id="room_choice">
+                            <option value="">獨者星球</option>
+                            <option value="">落秋葉</option>
+                            <option value="">黑白棋</option>
+                            <option value="">秘密基地</option>
+                            <option value="">南洋風情</option>
+                            <option value="">湛藍之星</option>
+                            <option value="">綠木榻榻</option>
+                        </select>
+                        <select name="" id="lobby_choice" required>
+                            <option value="">一般座位區</option>
+                            <option value="">沙發區</option>
+                        </select>
+                    </div>
+                    <div class="other">
+                        <label for="">其他</label><br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                      <a href="device.html"><input type="button" value="下一步" id="resr_next_btn"></a>  
+                    </div>
+                    
+                    
+                    <div class="clearfix"></div>
+            </form>
+        </div>
+    </main>
+
+    <!-- 燈箱 -->
+    <div id="myalert">
+        <div class="alert_content">
+            <h3></h3>
+            <p></p>
+            <a href="index.html"><input type="button" value="回首頁" id="alertBtn"></a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="center">
+            <div class="copyright">
+                Copyright &copy; 2019 SpaceOwner. All rights reserved
+            </div>
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fb_icon.png" alt=""></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="./images/twitter_icon.png" alt=""></a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script>
+            new WOW().init();
+        </script>
+
+
+    <script type="text/javascript">
+        // 燈箱跳窗
+        function alertJump() {
+            var myalert = $("myalert");
+            myalert.style.display = "block";
+        }
+
+        
+        //reservation-select切換 
+        $("room_rad").onclick=function(){
+            $("room_choice").style.display = "inline-block";
+            $("lobby_choice").style.display = "none";
+        }
+        $("lobby_rad").onclick=function(){
+            $("room_choice").style.display = "none";
+            $("lobby_choice").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+
+</html>

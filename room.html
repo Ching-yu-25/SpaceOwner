@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Owner | 包廂</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/room.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+
+    <header class="room">
+        <div class="center">
+            <h6>空間介紹</h6>
+            <h2>包廂</h2>
+        </div>
+
+    </header>
+
+    <!-- nav -->
+    <nav>
+        <div class="center">
+            <div class="nav_logo">
+                <a href="index.html" alt="spaceOwner │ Home"><img src="./images/nav_logo.svg" alt=""></a>
+            </div>
+            <button class="hamburger hamburger--spin" type="button" id="ham_btn">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="nav_list" id="menu">
+                <li>
+                    <div class="nowpage">空間介紹<span>Introduction</span></div>
+                    <div class="li_in">
+                        <ul class="sublist">
+                            <li class="nowpage">包廂</li>
+                            <li><a href=" lobby.html">大廳</a></li>
+                            <li><a href="rule.html">租借規則</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>/</li>
+                <li><a href="sale.html">優惠方案<span>Sale</span></a></li>
+                <li>/</li>
+                <li><a href="search.html">租借查詢<span>Search</span></a></li>
+                <li>/</li>
+                <li><a href="information.html">各店資訊<span>Information</span></a></li>
+                <li>/</li>
+                <li><a href="#">登入註冊<span>Sign in</span></a></li>
+            </ul>
+            <div class=" clearfix"></div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="room">
+        <section class="room_intro">
+            <div class="center">
+                <h3>包廂簡介</h3>
+                <div class="linedraw_text">
+                    <div class="linedraw wow fadeIn">
+                        <img src="./images/room-intro.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>包廂可容納人數：1 – 8人。</p>
+                        <p>各風格包廂可容納人數不同，有最高容納人數上限。</p>
+                        <p>包廂分為單人包廂及多人包廂。單人包廂於各樓層皆有分布，2樓以上主要為多人包廂。各分店所擁有風格包廂數量不同，預約前請先查詢。</p>
+                        <p>所有包廂單一出入口，皆設置一門一對外窗，為水泥牆面分隔，皆有加裝隔音棉隔音良好可做任何活動，請勿破壞空間。預約前可參閱優惠方案。</p>
+                        <p>可租借設備及加購茶點，請提早預約。在旅人抵達前會將所需之設備於包廂內布置完畢，設備數量有限，現場臨時租借須看是否有其他旅人租借。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="room_type">
+            <div class="center">
+                <h3>風格選擇</h3>
+                <p>空間如宇宙，<br>
+                    於偌大的宇宙中，找尋歸屬的空間。<br>
+                    今天，會去哪呢？</p>
+                <div class="room_choice">
+                    <div class="right wow bounceInRight">
+                        <div class="choice">
+                            <input type="button" id="arrow_l" value="←" disabled>
+                            <input type="button" id="arrow_r" value="→">
+                            <div class="all_type">
+                                <div class="type_wrap">
+                                    <div class="type">
+                                        <img src="./images/room_1.jpg" alt="">
+                                        <div class="typetext">
+                                            <p>獨者星球</p>
+                                        </div>
+                                    </div>
+                                    <div class="type">
+                                        <img src="./images/room_2.jpg" alt="">
+                                        <div class="typetext">
+                                            <p>湛藍之星</p>
+                                        </div>
+                                    </div>
+                                    <div class="type">
+                                        <img src="./images/room_3.jpg" alt="">
+                                        <div class="typetext">
+                                            <p>落秋葉</p>
+                                        </div>
+                                    </div>
+                                    <div class="type">
+                                        <img src="./images/room_4.jpg" alt="">
+                                        <div class="typetext">
+                                            <p>黑白棋</p>
+                                        </div>
+                                    </div>
+                                    <div class="type">
+                                        <img src="./images/room_5.jpg" alt="">
+                                        <div class="typetext">
+                                            <p>秘密基地</p>
+                                        </div>
+                                    </div>
+                                    <div class="type">
+                                        <img src="./images/room_6.jpg" alt="">
+                                        <div class="typetext">
+                                            <p>南方風情</p>
+                                        </div>
+                                    </div>
+                                    <div class="type">
+                                        <img src="./images/room_7.jpg" alt="">
+                                        <div class="typetext">
+                                            <p>綠木榻榻</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pic" id="room_pic_change"></div>
+                    </div>
+                    <div class="left wow bounceInLeft">
+                        <h4 id="room_title">獨者星球</h4>
+                        <div class="text">
+                            <p id="r_intro">一個人也可以很快樂，享受此刻遠離滿滿人群的世界，歡迎來到獨者星球。</p>
+                            <p>搭配計畫方案：<span id="r_plan">迷你影廳計畫、電動間計畫、單人方案</span></p>
+                            <p>空間坪數：約<span id="r_space">1</span>坪</p>
+                            <p>推薦人數：<span id="r_person">1</span>人</p>
+                            <p>價錢計算：<span id="r_rent">100</span>元/時</p>
+                        </div>
+                        <div class="btn"><a href="reservation.html">預約</a></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="rocket"></div>
+                <div class="planet"><img src="./images/planet.png" alt=""></div>
+            </div>
+            <p class="small">各分店風格包廂數量不同，詳細數量請至分店資訊查詢。</p>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="center">
+            <div class="copyright">
+                Copyright &copy; 2019 SpaceOwner. All rights reserved
+            </div>
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fb_icon.png" alt=""></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="./images/twitter_icon.png" alt=""></a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script type="text/javascript">
+        //小圖換大圖
+        function RoomIntro(e) {
+            var roomPic = e.target;
+            var picTitle = ["獨者星球", "湛藍之星", "落秋葉", "黑白棋", "秘密基地", "南方風情", "綠木榻榻"];
+            var roomInt = ["一個人也可以很快樂，享受此刻遠離滿滿人群的世界，歡迎來到獨者星球", "宛如置身於蔚藍的大海中，享受被湛藍世界所包圍的靜謐空間，讓心隨著海浪一同飄盪",
+                "感染懶洋洋的秋之氣息，就像回到家一樣，想做什麼就做什麼！", "黑白方格呈列宛若來到西洋棋的世界，如同騎士般的布置，一同遊戲來場chess吧~",
+                "童年時光的秘密基地再次出現再眼前，走進空間宛如時光倒轉", "木頭加花布是南方海島的經典搭配！坐在躺椅上彷彿能聽到海浪的交響樂，度假囉！",
+                "榻榻米加上花草裝飾，如同踏入大自然中，清新靜謐的和式空間非他莫屬"
+            ];
+            var roomPla = ["迷你影廳計畫、電動間計畫、單人方案", "迷你影廳計畫、電動間計畫"];
+            var roomPer = ["1", "2-4", "2-4", "6-8", "4-6", "2-4", "4-6"];
+            var roomSpa = ["1", "3", "3", "6", "4.5", "3", "4.5"];
+            var roomRen = ["100", "400", "400", "800", "600", "400", "600"];
+            var imgNum = picTitle.indexOf(roomPic.innerText);
+            $("room_pic_change").style.backgroundImage = `url("./images/room_${imgNum+1}.jpg")`;
+            $("room_title").innerText = roomPic.innerText;
+            $("r_intro").innerText = roomInt[imgNum];
+            $("r_rent").innerText = roomRen[imgNum];
+            $("r_person").innerText = roomPer[imgNum];
+            $("r_space").innerText = roomSpa[imgNum];
+            if (imgNum == 0) {
+                $("r_plan").innerText = roomPla[0];
+            } else {
+                $("r_plan").innerText = roomPla[1];
+            }
+        }
+        var roomChoose = document.querySelectorAll(".all_type .type");
+        for (var i = 0; i < 7; i++) {
+            roomChoose[i].onclick = RoomIntro;
+        }
+
+
+        //圖片左右切換
+        var typeNum = 0;
+        var typeWrap = document.getElementsByClassName("type_wrap")[0];
+        $("arrow_l").onclick = function (e) {
+            typeNum--;
+            $("arrow_r").disabled = false;
+            typeWrap.style.left = -150 * typeNum + "px";
+            if (typeNum == 0) {
+                $("arrow_l").disabled = true;
+            }
+        };
+        $("arrow_r").onclick = function (e) {
+            typeNum++;
+            $("arrow_l").disabled = false;
+            typeWrap.style.left = -150 * typeNum + "px";
+            if (typeNum == 3) {
+                $("arrow_r").disabled = true;
+            }
+        };
+    </script>
+
+</body>
+
+</html>

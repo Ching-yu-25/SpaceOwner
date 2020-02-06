@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif, 'arial', "微軟正黑體";
+    color: #434343;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,img {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    /*48*/
+    font-size: 3rem;
+    font-family: 'Noto Sans TC', sans-serif, 'arial', "微軟正黑體";
+    font-weight: 700;
+}
+
+@media screen and (max-width:767px) {
+    h2 {
+        /*41.6*/
+        font-size: 2.6rem;
+    }
+}
+
+h3 {
+    /*38.4*/
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #293d6e;
+}
+
+@media screen and (max-width:767px) {
+    h3 {
+        /*28.8*/
+        font-size: 1.8rem;
+    }
+}
+
+h4 {
+    /*28.8*/
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #293d6e;
+}
+
+@media screen and (max-width:767px) {
+    h4 {
+        /*24*/
+        font-size: 1.5rem;
+    }
+}
+
+h5 {
+    /*24*/
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width:767px) {
+    h5 {
+        /*20*/
+        font-size: 1.25rem;
+    }
+}
+
+h6 {
+    /*20*/
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+@media screen and (max-width:767px) {
+    h6 {
+        /*18.4*/
+        font-size: 1.15rem;
+        line-height: 1.5;
+    }
+}
+
+p {
+    /*16*/
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #434343;
+}
+
+@media screen and (max-width:767px) {
+    p {
+        /*16*/
+        font-size: 0.9rem;
+    }
+}
+
+p.small {
+    /*12.8*/
+    font-size: 0.8rem;
+    line-height: 2;
+}
+label,input{
+    font-family: 'Noto Sans TC', sans-serif, 'arial', "微軟正黑體";
+}
+
+.clearfix {
+    clear: both;
+}
+
+.center {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:767px) {
+    .center {
+        width: 80%;
+    }
+}
+
+header {
+    width: 100%;
+    margin-top: 60px;
+    padding: 5%;
+    background-size: 120%;
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    header {
+    height: auto;
+    padding: 4%;
+    background-size: 145%;
+    }
+}
+@media screen and (max-width:767px) {
+    header {
+        margin-top: 50px;
+        background-size: 160%;
+        background-attachment: scroll;
+    }
+}
+
+header .center {
+    text-align: center;
+}
+
+header h2,
+header h6 {
+    color: white;
+    text-shadow: 0px 0px 5px #434343;
+}
+
+
+/* 選單 */
+nav {
+    width: 100%;
+    height: 60px;
+    padding: 8px 0;
+    background-color: #293d6e;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+@media screen and (max-width:767px) {
+    nav {
+        padding: 5px 0;
+        height:50px;
+    }
+}
+
+
+.nav_logo {
+    width: 40%;
+    display: block;
+    float: left;
+}
+
+@media screen and (max-width:767px) {
+    .nav_logo {
+        width: 60%;
+        max-width:200px;
+    }
+    .nav_logo img{
+        width: 100%;
+        min-height: 40px;
+    }
+}
+
+nav>.center>ul.nav_list {
+    float: left;
+    font-size: 0;
+    width: 60%;
+}
+
+@media screen and (max-width:767px) {
+    nav>.center>ul.nav_list {
+        float: none;
+        width: 90%;
+        height: 100vh;
+        background-color: #293d6e;
+        position: absolute;
+        padding-top: 50px;
+        right: -100%;
+        top: 0;
+        transition: right .5s;
+    }
+
+    nav>.center>ul.nav_list.show {
+        right: 0;
+        transition: right .5s;
+    }
+}
+
+nav>.center>ul.nav_list>li {
+    font-size: 1rem;
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    nav>.center>ul.nav_list>li {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 3% 0;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+        outline: none;
+    }
+}
+
+nav>.center>ul.nav_list>li:nth-child(even) {
+    width: 1%;
+    display: inline-block;
+    padding: 1%;
+    margin-top: -2%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width:767px) {
+    nav>.center>ul.nav_list>li:nth-child(even) {
+        display: none;
+    }
+}
+
+nav>.center>ul.nav_list>li:last-child::after {
+    content: "";
+    padding: 0;
+}
+
+nav>.center>ul.nav_list>li span {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    padding-top: 1%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+nav>.center>ul.nav_list>li:hover {
+    color: #98e4ff;
+    transition: color 0.3s;
+}
+
+nav>.center>ul.nav_list>li>a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav>.center>ul.nav_list>li>a:hover {
+    color: #98e4ff;
+}
+
+nav .li_in {
+    position: absolute;
+    background-color: #293d6e;
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    nav .li_in {
+        width: 100%;
+        position: static;
+        margin-top: 8px;
+        background-color: #1a2c5a;
+        box-shadow: 0px 0px 5px #0a183b inset;
+    }
+}
+
+nav li:hover>.li_in {
+    display: block;
+}
+
+nav .li_in li {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+    width: 120px;
+    height: 50px;
+    padding: 0;
+    line-height: 50px;
+    transition: color 0.3s;
+}
+
+@media screen and (max-width:767px) {
+    nav .li_in li {
+        width: 100%;
+    }
+}
+
+nav .li_in li:last-child {
+    border-bottom: none;
+}
+
+nav .li_in li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .li_in li:hover {
+    color: #98e4ff;
+}
+
+nav .li_in li a:hover {
+    color: #98e4ff;
+}
+
+.nowpage {
+    color: #f8e18d;
+    font-weight: 700;
+}
+
+/*漢堡選單*/
+.hamburger {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    color: white;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    overflow: visible;
+    float: right;
+    z-index: 100;
+    position: absolute;
+    right: 5%;
+    outline: none;
+    display: none;
+}
+@media screen and (max-width:767px){
+    .hamburger {
+        display: block;
+    }
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+/*Spin*/
+.hamburger--spin .hamburger-inner {
+    transition-duration: 0.22s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin .hamburger-inner::before {
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+
+.hamburger--spin .hamburger-inner::after {
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+    transform: rotate(225deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spin.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+
+.hamburger--spin.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+main{
+    width: 100%;
+}
+
+
+
+/*room&lobby section*/
+main.lobby section,main.room section{
+    padding: 5% 0;
+}
+section.lobby_intro,section.room_intro{
+    background-color: #293d6e;
+    color: white;
+}
+section.lobby_intro h3,section.room_intro h3{
+    color: #f8e18d;
+    margin-bottom: 2%;
+}
+section.room_intro p,section.lobby_intro p{
+    color: white;
+    margin: 3% 0;
+}
+.linedraw_text {
+    width: 100%;
+    font-size: 0;
+}
+.linedraw_text img{
+    width: 100%;
+}
+.linedraw_text .linedraw{
+    width: 40%;
+    float: left;
+    padding: 0 2%;
+}
+@media screen and (max-width:767px){
+    .linedraw_text .linedraw{
+        width: 100%;
+        display: block;
+    }
+}
+.linedraw_text .text{
+    width: 60%;
+    float: left;
+    text-align: left;
+    padding: 0 2%;
+}
+@media screen and (max-width:767px){
+    .linedraw_text .text{
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.8);
+    clear: both;
+}
+
+@media screen and (max-width:767px) {
+    footer {
+        padding: 3% 0;
+    }
+}
+
+footer .copyright {
+    width: 80%;
+    float: left;
+    font-size: 0.75rem;
+    color: white;
+    margin-top: 1%;
+    margin-left: 10%
+}
+
+@media screen and (max-width:767px) {
+    footer .copyright {
+        width: 70%;
+        margin-left: 0;
+    }
+}
+
+footer .social_icon {
+    width: 10%;
+    float: right;
+    font-size: 0;
+}
+
+@media screen and (max-width:767px) {
+    footer .social_icon {
+        width: 25%;
+        float: right;
+        font-size: 0;
+    }
+}
+
+footer .social_icon img {
+    width: 28px;
+}
+
+@media screen and (max-width:767px) {
+    footer .social_icon img {
+        padding-top: 5px;
+        width: 25px;
+    }
+}
+
+footer .social_icon>li {
+    display: inline-block;
+    width: 50%;
+}
+
+input,select{
+    -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+    -moz-appearance: none;     /* FireFox */
+    appearance: none;
+    background-color: white;
+    border-radius: 0;
+}
+
+input[type="button"] {
+    font-size: 1rem;
+    width: 90%;
+    max-width: 200px;
+    padding: 8px 0;
+    margin: 2% auto;
+    color: white;
+    border: 0px;
+    outline: none;
+    border-radius: 0;
+    background-color: #3577bc;
+    transition: box-shadow .5s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn a {
+    margin: 2% auto;
+    width: 90%;
+    max-width: 200px;
+    text-align: center;
+    display: block;
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    background-color: #3577bc;
+    transition: box-shadow .5s;
+}
+
+input[type="button"]:hover,
+.btn a:hover {
+    box-shadow: 0px 0px 10px #3577bc;
+}
+
+
+
+.more_btn {
+    margin: 2% auto;
+    cursor: pointer;
+}
+
+.more_btn a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px dashed white;
+    display: inline-block;
+    transition: color .5s;
+}
+
+.more_btn a:hover {
+    color: #98e4ff;
+    border-bottom: 1px solid #98e4ff;
+}
+
+
+/*燈箱*/
+#myalert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 61, 93, 0.9);
+    background-attachment: fixed;
+    z-index: 100;
+    display: none;
+    animation: picOpa .2s 1 ease-in-out forwards;
+    /* transition: background-color .5s; */
+}
+
+#myalert .alert_content {
+    max-width: 800px;
+    width: 80%;
+    padding: 3% 5% 5%;
+    text-align: center;
+    border: 2px solid #293d6e;
+    background-color: white;
+    box-shadow: 0px 0px 10px #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+}
+
+#myalert p {
+    margin: 5% auto;
+}
+
+#myalert input[type="button"] {
+    margin-bottom: 0;
+}
+
+@keyframes lineDraw{
+    from{
+        stroke-dashoffset: 200;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes picOpa {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
