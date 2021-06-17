@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Space Owner | 租借規則</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/reservation.css">
-    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -24,14 +24,13 @@
     <nav>
         <div class="center">
             <div class="nav_logo">
-                <a href="index.html" alt="spaceOwner │ Home"><img src="./images/nav_logo.svg"
-                        alt=""></a>
+                <a href="index.html" alt="spaceOwner │ Home"><img src="images/nav_logo.svg" alt=""></a>
             </div>
             <button class="hamburger hamburger--spin" type="button" id="ham_btn">
                 <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                 </span>
-              </button>
+            </button>
             <ul class="nav_list" id="menu">
                 <li>
                     <div>空間介紹<span>Introduction</span></div>
@@ -81,7 +80,7 @@
                     <div class="res_place">
                         <label for="">預約分店</label>
                         <select name="" id="" required>
-                            <option value="" >台北店</option>
+                            <option value="">台北店</option>
                             <option value="">新北店</option>
                             <option value="">桃園店</option>
                             <option value="">台中店</option>
@@ -137,7 +136,7 @@
                         </select>
                     </div>
                     <div class="resr_type">
-                        <input type="radio" name="resr_type" id="room_rad"  checked required>
+                        <input type="radio" name="resr_type" id="room_rad" checked required>
                         <label for="room_rad" class="resr_room">包廂</label>
                         <input type="radio" name="resr_type" id="lobby_rad" required>
                         <label for="lobby_rad" class="resr_lobby">大廳</label>
@@ -160,10 +159,10 @@
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
                     <div>
-                      <a href="device.html"><input type="button" value="下一步" id="resr_next_btn"></a>  
+                        <a href="device.html"><input type="button" value="下一步" id="resr_next_btn"></a>
                     </div>
-                    
-                    
+
+
                     <div class="clearfix"></div>
             </form>
         </div>
@@ -185,8 +184,8 @@
                 Copyright &copy; 2019 SpaceOwner. All rights reserved
             </div>
             <ul class="social_icon">
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fb_icon.png" alt=""></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><img src="./images/twitter_icon.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fb_icon.png" alt=""></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter_icon.png" alt=""></a></li>
             </ul>
             <div class="clearfix"></div>
         </div>
@@ -194,11 +193,11 @@
 
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/wow.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
+    <script src="js/wow.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <script>
-            new WOW().init();
-        </script>
+        new WOW().init();
+    </script>
 
 
     <script type="text/javascript">
@@ -208,13 +207,13 @@
             myalert.style.display = "block";
         }
 
-        
+
         //reservation-select切換 
-        $("room_rad").onclick=function(){
+        $("room_rad").onclick = function () {
             $("room_choice").style.display = "inline-block";
             $("lobby_choice").style.display = "none";
         }
-        $("lobby_rad").onclick=function(){
+        $("lobby_rad").onclick = function () {
             $("room_choice").style.display = "none";
             $("lobby_choice").style.display = "inline-block";
         }

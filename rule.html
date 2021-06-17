@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Space Owner | 租借規則</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/rule.css">
-    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/rule.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     <nav>
         <div class="center">
             <div class="nav_logo">
-                <a href="index.html" alt="spaceOwner │ Home"><img src="./images/nav_logo.svg" alt=""></a>
+                <a href="index.html" alt="spaceOwner │ Home"><img src="images/nav_logo.svg" alt=""></a>
             </div>
             <button class="hamburger hamburger--spin" type="button" id="ham_btn">
                 <span class="hamburger-box">
@@ -60,7 +60,7 @@
         <div class="center">
             <div class="type_rule">
                 <div class="room_rule">
-                    <div class="bg"><img src="./images/room_3.jpg" alt=""></div>
+                    <div class="bg"><img src="images/room_3.jpg" alt=""></div>
                     <h3>包廂規則</h3>
                     <ol>
                         <li>
@@ -87,7 +87,7 @@
                     </ol>
                 </div>
                 <div class="lobby_rule">
-                    <div class="bg"><img src="./images/index_lobby.jpg" alt=""></div>
+                    <div class="bg"><img src="images/index_lobby.jpg" alt=""></div>
                     <h3>大廳規則</h3>
                     <ol>
                         <li>
@@ -160,7 +160,7 @@
                     <div class="quest">
                         <p>6.人數如果超過包廂人數上限，一樣可以預約嗎?</p>
                     </div>
-                    <div class="ans" >
+                    <div class="ans">
                         <p>為提供旅人們最棒的空間感受，每間包廂都有最高容納限制，若超過限制依人數酌收費用。</p>
                     </div>
                 </li>
@@ -176,8 +176,8 @@
                 Copyright &copy; 2019 SpaceOwner. All rights reserved
             </div>
             <ul class="social_icon">
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fb_icon.png" alt=""></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><img src="./images/twitter_icon.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fb_icon.png" alt=""></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter_icon.png" alt=""></a></li>
             </ul>
             <div class="clearfix"></div>
         </div>
@@ -185,13 +185,13 @@
 
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <script>
         for (var i = 0; i < 6; i++) {
             $(`qa${i+1}`).onclick = function (e) {
                 var ans = e.target;
                 var num = ans.innerText.charAt(0);
-               $(`qa${num}`).classList.toggle("height");
+                $(`qa${num}`).classList.toggle("height");
             };
         }
     </script>
